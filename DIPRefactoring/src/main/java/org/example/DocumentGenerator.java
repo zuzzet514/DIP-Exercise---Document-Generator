@@ -14,7 +14,7 @@ public class DocumentGenerator {
 
         String fileName = inputReader.readInput("Ingresa el nombre de archivo(sin extensión):");
 
-        String fileType = inputReader.readInput("Escoge el tipo de tu archivo:" + registry.showOptions());
+        String fileType = inputReader.readInput("Escoge el tipo de tu archivo: " + registry.showOptions());
         int choice = Integer.parseInt(fileType);
 
         FileCreator fileCreator = registry.getCreator(choice);

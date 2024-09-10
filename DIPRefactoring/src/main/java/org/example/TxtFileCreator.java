@@ -5,6 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class TxtFileCreator implements FileCreator {
+    private static String type = "txt";
 
     @Override
     public void createFile(String content, String fileName) {
@@ -16,5 +17,9 @@ public class TxtFileCreator implements FileCreator {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static String getType() {
+        return type;
     }
 }
